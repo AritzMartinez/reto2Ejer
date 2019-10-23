@@ -1,0 +1,55 @@
+<html>
+<head>
+     <title>Ejemplo DOM </title>
+    </head>
+ <body>
+
+ <script>
+    //La operaci´on b´asica consiste en obtener el objeto que representa elemento ra´ız de la p´agina:
+
+     let objetoHtml = document. documentElement ;
+    document.write( objetoHtml );
+    document.write("<br/>TipoA: " + objetoHtml .nodeType + " Nombre: " + objetoHtml . nodeName + " Valor: " + objetoHtml . nodeValue + " Propietario : " + objetoHtml . ownerDocument );
+
+     let objetoHead = objetoHtml . firstChild ;
+     document.write("<br/>" + objetoHead );
+     document.write("<br/>TipoB: " + objetoHead .nodeType + " Nombre: " + objetoHead . nodeName + " Valor: " + objetoHead . nodeValue + " Propietario : " + objetoHead.ownerDocument );
+
+     let objetoBody = objetoHtml . lastChild ;
+     document.write("<br/>" + objetoBody );
+     document.write("<br/>TipoC: " + objetoBody .nodeType + " Nombre: " + objetoBody.nodeName + " Valor: " + objetoBody . nodeValue + " Propietario : " + objetoBody.ownerDocument );
+
+
+     // Otra forma directa de obtener los dos nodos consiste en utilizar lapropiedad childNodes o children
+
+     let numeroHijos = objetoHtml . childNodes .length
+     document.write("<br/> El nodo html tiene " + numeroHijos + " childNodes ");
+     let objetoUno = objetoHtml. childNodes [0];
+     let objetoDos = objetoHtml. childNodes [1];
+     let objetoTres = objetoHtml. childNodes [2];
+
+     document.write("<br/>TipoD: " + objetoUno .nodeType + " Nombre: " + objetoUno .nodeName + " Valor: " + objetoUno . nodeValue + " Propietario : " + objetoUno . ownerDocument );
+     document.write("<br/>TipoE: " + objetoDos .nodeType + " Nombre: " + objetoDos .nodeName + " Valor: " + objetoDos . nodeValue + " Propietario : " + objetoDos .ownerDocument );
+     document.write("<br/>TipoF: " + objetoTres .nodeType + " Nombre: " + objetoTres . nodeName + " Valor: " + objetoTres . nodeValue + " Propietario : " + objetoTres . ownerDocument );
+
+     numeroHijos = objetoHtml .children.length
+     document.write("<br/> El nodo html tiene " + numeroHijos + " children");
+
+     objetoUno = objetoHtml.children [0];
+     objetoDos = objetoHtml.children [1];
+     document.write("<br/>TipoG: " + objetoUno .nodeType + " Nombre: " + objetoUno .nodeName + " Valor: " + objetoUno . nodeValue + " Propietario : " + objetoUno . ownerDocument );
+     document.write("<br/>TipoH: " + objetoDos .nodeType + " Nombre: " + objetoDos .nodeName + " Valor: " + objetoDos . nodeValue + " Propietario : " + objetoDos . ownerDocument );
+
+
+     //El DOM de HTML permite acceder directamente al elemento <body>utilizando el atajo document.body:
+
+     objetoBody = document .body;
+
+    /* Adem´as de las propiedades anteriores , existen otras propiedades como
+    previousSibling y parentNode que se pueden utilizar para acceder a un
+    nodo a partir de otro. Utilizando estas propiedades , se puedencomprobar las siguientes igualdades :*/
+
+     document.write("<br/>Padre del body: " + objetoBody.parentNode.nodeName);
+     </script>
+  </body>
+</html>
