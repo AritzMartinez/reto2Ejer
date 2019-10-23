@@ -1,0 +1,45 @@
+body {
+	background: grey;
+	font-family:sans-serif;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+main{
+	background: lightgray;
+	padding: 10px;
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+}
+header{
+	background: white;
+	font-size: 15px;
+	padding: 10px;
+}
+article{
+	background: aqua;
+	padding: 20px;
+	width: 70%;
+}
+aside{
+	background: darkblue;
+	padding: 20px;
+	width: 30%;
+}
+section{
+	display: flex;
+
+}
+@media screen and (max-width: 500px){
+section{
+
+	flex-direction: column;
+	width: 131%;
+}
+	aside{
+		width: 100%;
+	}
+
+}

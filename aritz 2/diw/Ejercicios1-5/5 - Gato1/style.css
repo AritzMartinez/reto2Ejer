@@ -1,0 +1,35 @@
+body{
+    background: #999999;
+
+}
+#subscribe{
+    margin: 5px;
+    background: #686868;
+    display: flex;
+    justify-content: center;
+}
+#contenido{
+    margin: 5px;
+    background: #686868;
+}
+#principal{
+    margin: 5px;
+    background: #686868;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+#movil{
+    margin: 5px;
+    background: #686868;
+}
+footer{
+    margin: 5px;
+    background: #686868;
+    display: flex;
+    justify-content: center;
+}
+section{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,15 @@
+<html>
+<head>
+    <script language="JavaScript">
+        nuevaVentana=window.open("Auxiliar1.htm", "Ventana1");
+        //también sería correcto: self.open("ventanaAux.htm", "Ventana1")
+        function chequear(){
+            if (nuevaVentana.closed==true) alert ("La ventana se ha cerrado");
+            else alert ("La ventana sigue abierta");
+        }
+    </script>
+</head>
+<body >
+<a href="javascript:chequear()">¿Está la ventana cerrada?</a>
+</body>
+</html>
