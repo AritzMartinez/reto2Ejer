@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15ffebc5-c059-4df2-b7bb-0fa8c786f4c9" name="Default Changelist" comment="" />
+    <list default="true" id="15ffebc5-c059-4df2-b7bb-0fa8c786f4c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/ejer07.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer07.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/ejer08.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer08.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/ejer09.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer09.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/ejer10.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer10.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/ejer11.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer11.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/ejer12.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer12.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/ejer13.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer13.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/ejer14.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer14.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/ejer15.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer15.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/ejer16.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer16.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/ejer17.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer17.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/ejer18.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer18.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/holaMundo.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/holaMundo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/holamundo.html" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/holamundo.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,14 +30,30 @@
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1SKGQEd7S5JwfS2xmCNNkPvcPtY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/php/introduccion" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -49,10 +82,22 @@
       <updated>1571304855140</updated>
       <workItem from="1571304856764" duration="5310000" />
       <workItem from="1571725252833" duration="8846000" />
+      <workItem from="1571825312969" duration="6196000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
