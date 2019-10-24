@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="15ffebc5-c059-4df2-b7bb-0fa8c786f4c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Practica1/ejer1.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/Practica1/ejer1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Practica1/ejer1.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Practica1/ejer1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Practica1/ejer3.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Practica1/ejer3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/Practica1/ejer4.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/Practica1/ejer4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/Practica1/ejer4.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Practica1/ejer4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/formulario/ejer1.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/formulario/ejer1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Practica1/ejer5.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/Practica1/ejer5.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +77,7 @@
       <workItem from="1571825312969" duration="6446000" />
       <workItem from="1571898405979" duration="5825000" />
       <workItem from="1571910106886" duration="7944000" />
+      <workItem from="1571928360320" duration="2918000" />
     </task>
     <servers />
   </component>

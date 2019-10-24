@@ -8,13 +8,11 @@ function añadir() {
     document.body.appendChild(formu);
     //Añado el texto al elemento label
     label.appendChild(labelText);
-    if (label1.length == 0){
-        formu.insertBefore(label,null);
-    }else {
-        formu.insertBefore(label,label1[0]);
+    if (label1.length == 0) {
+        formu.insertBefore(label, null);
+    } else {
+        formu.insertBefore(label, label1[0]);
     }
-
-
 
 }
 
@@ -26,7 +24,7 @@ function borrar() {
 //medio
 function añadirMedio() {
     let numLabel = document.getElementsByTagName("label");
-    let medio = Math.round(numLabel.length/2);
+    let medio = Math.round(numLabel.length / 2);
     console.log(numLabel.length);
     console.log(medio);
 
@@ -39,11 +37,10 @@ function añadirMedio() {
     //Añado el texto al elemento label
     label.appendChild(labelText);
     //Inserto en el div el label
-    if (medio == 0){
-        formu.insertBefore(label,null);
-    }else {
-        formu.insertBefore(label,numLabel[medio]);
-
+    if (medio == 0) {
+        formu.insertBefore(label, null);
+    } else {
+        formu.insertBefore(label, numLabel[medio]);
     }
 }
 
