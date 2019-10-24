@@ -23,8 +23,10 @@ if (isset($_GET["temperatura"]) && isset($_GET["unidad"])){
     $temperatura = $_GET["temperatura"];
     $unidad = $_GET["unidad"];
 
+
     echo convertir($temperatura,$unidad);
 }
+
 
 function convertir ($tem,$uni){
     if ($uni == "Celsius"){

@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15ffebc5-c059-4df2-b7bb-0fa8c786f4c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/ejer07.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer07.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/ejer08.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer08.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/ejer09.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer09.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/ejer10.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer10.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/ejer11.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer11.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/ejer12.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer12.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/ejer13.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer13.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/ejer14.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer14.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/ejer15.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer15.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/ejer16.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer16.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/ejer17.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer17.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/ejer18.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/ejer18.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/holaMundo.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/holaMundo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/holamundo.html" beforeDir="false" afterPath="$PROJECT_DIR$/php/introduccion/holamundo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Practica1/ejer4.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/Practica1/ejer4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Practica1/ejer4.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Practica1/ejer4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/formulario/ejer1.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/formulario/ejer1.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,14 +36,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/php/introduccion" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/php/introduccion" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -82,7 +71,9 @@
       <updated>1571304855140</updated>
       <workItem from="1571304856764" duration="5310000" />
       <workItem from="1571725252833" duration="8846000" />
-      <workItem from="1571825312969" duration="6196000" />
+      <workItem from="1571825312969" duration="6446000" />
+      <workItem from="1571898405979" duration="5825000" />
+      <workItem from="1571910106886" duration="7944000" />
     </task>
     <servers />
   </component>
@@ -94,7 +85,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

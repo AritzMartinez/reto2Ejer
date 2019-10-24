@@ -1,24 +1,24 @@
-let nodoHtml = document.documentElement;
-console.log(nodoHtml.nodeName);
+function arbolDeNodos() {
+    let objetoHTML = document.documentElement;
+    alert("El elemento padre es: "+objetoHTML.nodeName);
+    let objetoHead = objetoHTML.firstChild;
+    let objetoBody = objetoHTML.lastChild;
+    alert("Los elementos debajo del padre son: " + objetoHead.nodeName + " y " + objetoBody.nodeName);
 
-let nodehead = nodoHtml.children[0];
-let nodebody = nodoHtml.children[1];
+    hijos(objetoHead)
 
+    hijos(objetoBody)
+}
 
-console.log(nodehead.nodeName);
-
-
-let nodeHead = nodoHtml.firstChild;
-console.log(" " + nodeHead.nodeName);
-
-let nodeTitle = nodeHead.children[0];
-let nodeScript = nodeHead.children[1];
-let nodeScript1 = nodeHead.childNodes[3];
-
-console.log("  "+nodeTitle.nodeName);
-console.log("  "+nodeScript.nodeName);
-console.log("  "+nodeScript1.nodeName);
-
-
-let nodoBody = nodoHtml.children[1];
-console.log(" " + nodoBody);
+function hijos(valorNodo) {
+    let msj = "Los objetos dentro de "+ valorNodo.nodeName + " son: ";
+    for (let i = 0; i < valorNodo.children.length; i++) {
+        msj += valorNodo.children[i].nodeName + " ";
+    }
+    alert(msj);
+    for (let i = 0; i < valorNodo.children.length; i++) {
+        if (valorNodo.children[i].hasChildNodes()) {
+            hijos(valorNodo.children[i])
+        }
+    }
+}
