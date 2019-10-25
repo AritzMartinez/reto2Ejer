@@ -3,12 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="15ffebc5-c059-4df2-b7bb-0fa8c786f4c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/Practica1/ejer1.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/Practica1/ejer1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/Practica1/ejer1.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Practica1/ejer1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/Practica1/ejer3.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Practica1/ejer3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/Practica1/ejer4.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/Practica1/ejer4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/Practica1/ejer4.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Practica1/ejer4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/Practica1/ejer5.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/Practica1/ejer5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diw/Ejercicios1-5/4 - Menú horizontal/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/diw/Ejercicios1-5/4 - Menú horizontal/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diw/Ejercicios1-5/4 - Menú horizontal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/diw/Ejercicios1-5/4 - Menú horizontal/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diw/Ejercicios1-5/4 - Menú horizontal/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diw/Ejercicios1-5/5 - Gato1/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/diw/Ejercicios1-5/5 - Gato1/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diw/Ejercicios1-5/5 - Gato1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/diw/Ejercicios1-5/5 - Gato1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diw/Ejercicios1-5/5 - Gato1/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Practica1/.idea/Practica1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Practica1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Practica1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Practica1/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +82,7 @@
       <workItem from="1571898405979" duration="5825000" />
       <workItem from="1571910106886" duration="7944000" />
       <workItem from="1571928360320" duration="2918000" />
+      <workItem from="1571987650238" duration="2274000" />
     </task>
     <servers />
   </component>

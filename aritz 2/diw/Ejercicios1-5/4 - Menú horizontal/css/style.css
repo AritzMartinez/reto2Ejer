@@ -13,6 +13,9 @@ html {
 body {
     background-color: lightgray;
     font-family:sans-serif;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 ul.principal {
@@ -22,10 +25,17 @@ ul.principal {
     padding: 10px;
     background: gray;
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .menu {
     height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
 }
 
 .menu a {
@@ -37,13 +47,42 @@ ul.principal {
 }
 
 .social {
-
+    display: flex;
+    margin: 5px;
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 800px) {
+    ul.principal{
+        flex-wrap: wrap;
+        align-content:flex-start ;
+        justify-content: normal;
+    }
+    .menu{
+        flex-basis: 30%;
+        align-items: normal;
+        justify-content: center;
+    }
+    .social{
+        flex-basis: 10%;
+    }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 600px) {
+    ul.principal{
+        flex-wrap: wrap;
+        align-content:flex-start ;
+        justify-content: normal;
+    }
+    .menu{
+        flex-basis: 100%;
+        align-items: normal;
+        justify-content: center;
 
+    }
+    .social{
+        flex-basis: 30%;
+        margin: 0;
+        justify-content: center;
+    }
 }
+
