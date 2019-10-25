@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15ffebc5-c059-4df2-b7bb-0fa8c786f4c9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diw/Ejercicios1-5/5 - Gato1/.~lock.Actividad_Flexbox5.doc#" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diw/EjerciciosGrid/1/css/estilos.css" beforeDir="false" afterPath="$PROJECT_DIR$/diw/EjerciciosGrid/1/css/estilos.css" afterDir="false" />
-    </list>
+    <list default="true" id="15ffebc5-c059-4df2-b7bb-0fa8c786f4c9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +72,7 @@
       <workItem from="1571928360320" duration="2918000" />
       <workItem from="1571987650238" duration="2274000" />
       <workItem from="1571990454617" duration="606000" />
+      <workItem from="1571996125378" duration="4000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        function Persona() {
+            // Atributos
+            this.nombre;
+            this.edad;
+        }
+
+        // Constructor vac´ıo
+        let objetoUno = new Persona();
+
+        // No hay m´etodos get y set
+        objetoUno.nombre = "aa";
+        objetoUno.edad = 7;
+        alert("He creado un objeto de tipo persona " + objetoUno + " " +
+            objetoUno.nombre + " " + objetoUno.edad);
+        // He creado un objeto de tipo persona [object Object] aa 7
+        // Lo mismo con una funci´on an´onima.
+        let Persona = function () {
+            this.nombre;
+            this.edad;
+        }
+        let objeto = new Persona();
+
+
+        // Constructor con datos
+        function PersonaDos(nombre, edad) {
+            // Atributos
+            this.nombre = nombre;
+            this.edad = edad;
+        }
+
+        let objetoDos = new PersonaDos("bb", 8);
+        alert("He creado otro objeto de tipo persona " + objetoDos + objetoDos .nombre + objetoDos .edad);
+
+        let objetoTres = new PersonaDos();
+        objetoTres.nombre = "cc";
+        objetoTres.edad = 9;
+        alert("He creado otro objeto de tipo persona " + objetoTres + objetoTres .nombre + objetoTres .edad);
+
+        // Notaci´on JSON
+        let objetoCuatro = {nombre: "dd", edad: 10}
+        alert("He creado otro objeto de tipo persona " + objetoCuatro +
+            " " + objetoCuatro.nombre + " " + objetoCuatro.edad);
+        // Clase object
+        let objetoCinco = new Object();
+        objetoCinco.nombre = "ee";
+        objetoCinco.edad = 11;
+        alert("He creado otro objeto de tipo persona " + objetoCinco + objetoCinco.nombre + " " + objetoCinco.edad);
+        alert("Otra vez " + objetoCinco + " " + objetoCinco ['nombre'] + "" + objetoCinco ['edad']);
+
+    </script>
+</head>
+
+</html>

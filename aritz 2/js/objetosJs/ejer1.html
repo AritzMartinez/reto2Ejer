@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="ejer1.js"></script>
+    <script src="objPersona.js"></script>
+</head>
+<body>
+<p>
+    <h1>Contactos</h1>
+</p>
+    <input type="submit" value="Añadir" onclick="verFormulario()">
+    <input type="submit" value="Buscar" onclick="verBuscar()">
+<div id="divContacto" style="display: none">
+    <form id="formuContacto">
+        <p>
+        Nombre:
+        <input type="text" name="nombre" size="40">
+        </p>
+        <p>
+        Organizacion:
+        <input type="text" name="organizacion">
+        </p>
+        <p>
+        Movil:
+        <input type="text" name="movil">
+        </p>
+    </form>
+    <p>
+        <input type="submit" value="Añadir campo" onclick="añadirCampo()">
+        <input type="submit" value="Enviar" onclick="enviar()">
+    </p>
+</div>
+
+<div id="divBuscar" style="display: none">
+    <form id="formuBuscar">
+        <p>
+            Nombre:
+            <input type="text" name="nombre" size="40">
+        </p>
+        <p>
+            Organizacion:
+
+            <select type="checkbox" name="organizacion">
+                <option>        </option>
+            </select>
+        </p>
+      </form>
+</div>
+
+</body>
+</html>
