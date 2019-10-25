@@ -9,7 +9,6 @@
   display: grid;
   grid-template-columns: repeat(4, 320px);
   grid-template-rows: repeat(4, 100px);
-  border: 1px solid;
 }
 
 #azul {
@@ -36,12 +35,14 @@
   margin: 20px auto;
   width: 70%;
   display: grid;
-  grid-template-columns: repeat(4, 300px);
-  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(4, 320px);
+  grid-template-rows: repeat(3, 100px);
 }
 
 .main div:nth-child(1) {
   background-color: blue;
+  grid-row: 1/4;
+  grid-column: 1/2;
 }
 
 .main div:nth-child(2) {
@@ -54,7 +55,11 @@
 
 .main div:nth-child(4) {
   background-color: green;
+  grid-row: 2/3;
+  grid-column: 2/3;
 }
 .main div:nth-child(5) {
   background-color: black;
+  grid-row: 1/4;
+  grid-column: 4/5;
 }
