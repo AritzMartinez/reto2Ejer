@@ -1,47 +1,43 @@
-let contactos =[];
-let numPersona =0;
+let contactos = [];
+let numPersona = 0;
 
 //Hacer visibel o invisibel el formulario (boton añadir)
-function verFormulario(){
+function verFormulario() {
     let div = document.getElementById("divContacto");
-    if (div.style.display == 'none'){
-        div.style.display='block';
-    }else {
-        div.style.display='none';
+    if (div.style.display == 'none') {
+        div.style.display = 'block';
+    } else {
+        div.style.display = 'none';
     }
 
 
 }
 
 //Hacer visibel o invisibel el formulario (boton buscar)
-function verBuscar(){
+function verBuscar() {
 
     let divBuscar = document.getElementById("divBuscar");
-    if (divBuscar.style.display == 'none'){
-        divBuscar.style.display='block';
-    }else {
-        divBuscar.style.display='none';
+    if (divBuscar.style.display == 'none') {
+        divBuscar.style.display = 'block';
+    } else {
+        divBuscar.style.display = 'none';
     }
 
 }
-let contador=4;
+
+let contador = 4;
+
 //Añadir campo al formulario
 function añadirCampo() {
     let nomCampo = prompt("Nombre del campo");
-    /*
-    let tipoDatos = prompt("Nombre del campo");
-    */
-/*
-    Object.defineProperty(contacto, 'nomCampo');
-*/
 
     let formulario = document.getElementById("formuContacto");
     let p = document.createElement("p");
+    p.id = "p" + contador;
     let input = document.createElement("input");
-    input.id=contador;
+    input.id = contador;
     let pText = document.createTextNode(nomCampo + ": ");
 
-    Object.defineProperty(Persona, nomCampo, { value: 1 });
     p.appendChild(pText);
     p.appendChild(input);
     formulario.appendChild(p);
@@ -49,13 +45,15 @@ function añadirCampo() {
     console.log(contactos);
 }
 
-function cargarOrganizacion(){
-   /* var array = ["Cantabria", "Asturias", "Galicia", "Andalucia", "Extremadura"];
-    contacto.organizacion;
-    var provincia = document.getElementById("provincia");
-    for(var i=0;i<array.length;i++){
-        provincia.options[i] = new option(array[i]);
-    }*/
+function cargarOrganizacion(org) {
+    contactos.sort();
+    let select = document.getElementById("check");
+
+    let option = document.createElement("option");
+    option.text = org;
+    select.add(option);
+
+
 }
 
 function enviar() {
@@ -63,17 +61,50 @@ function enviar() {
     let nombre = document.getElementById("1").value;
     let organizacion = document.getElementById("2").value;
     let movil = document.getElementById("3").value;
-    let per = new Persona(nombre,organizacion,movil);
-    per.setAttribute("Email","2");
-    contactos[numPersona]=per;
+    let campos = [];
+
+    for (let i = 4; i < contador; i++) {
+        campos[i - 4] = document.getElementById(i).value;
+    }
+
+    contactos[numPersona] = new Persona(nombre, organizacion, movil, campos);
     numPersona++;
     console.log(contactos);
+    cargarOrganizacion(organizacion);
     limpiarCampos();
 
 }
+
+function buscar() {
+    let nombuscar = document.getElementById("1buscar").value;
+    let combo = document.getElementById("check");
+    let selected = combo.options[combo.selectedIndex].text;
+
+    for (let i = 0; i < contactos.length; i++) {
+        if (contactos[i].nombre == nombuscar && contactos[i].organizacion == selected) {
+            imprimirPersona(contactos[i]);
+            break;
+        }
+    }
+}
+
+function imprimirPersona(persona) {
+
+    let msj = "**** Datos de la persona ****"
+    msj = msj + "Nombre: " + persona.nombre + "\n";
+    msj = msj + "Organizacion: " + persona.organizacion + "\n";
+    msj = msj + "Movil: " + persona.movil + "\n";
+    for (let i = 0; i < persona.campos.length; i++) {
+        let pos = 4 + i;
+        msj = msj + document.getElementById("p" + pos).innerText;
+        msj = msj + persona.campos[i] + "\n";
+    }
+    alert(msj);
+}
+
 function limpiarCampos() {
-    for (let i = 1; i <contador ; i++) {
-        document.getElementById(i).value="";
+    for (let i = 1; i < contador; i++) {
+        document.getElementById(i).value = "";
     }
 
 }
