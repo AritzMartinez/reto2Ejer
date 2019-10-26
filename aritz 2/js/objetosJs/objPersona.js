@@ -1,4 +1,9 @@
-let contacto = new Object();
-contacto.nombre = "Aritz","Juan";
-contacto.organizacion = "A","J";
-contacto.movil= "654121314","654212223";
+class Persona {
+     // constructor donde definir las variables que se reciben y guardarlaen el objeto usando this
+
+     constructor (nombre,organizacion,movil) {
+         this.nombre = nombre;
+         this.organizacion = organizacion;
+         this.movil = movil;
+         }
+     }

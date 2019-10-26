@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15ffebc5-c059-4df2-b7bb-0fa8c786f4c9" name="Default Changelist" comment="" />
+    <list default="true" id="15ffebc5-c059-4df2-b7bb-0fa8c786f4c9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/objetosJs/ejer1.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/objetosJs/ejer1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/objetosJs/ejer1.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/objetosJs/ejer1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/objetosJs/objPersona.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/objetosJs/objPersona.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +78,7 @@
       <workItem from="1571987650238" duration="2274000" />
       <workItem from="1571990454617" duration="606000" />
       <workItem from="1571996125378" duration="4000" />
+      <workItem from="1572078956429" duration="5965000" />
     </task>
     <servers />
   </component>
