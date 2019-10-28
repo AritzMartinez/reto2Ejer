@@ -9,20 +9,16 @@ function verFormulario() {
     } else {
         div.style.display = 'none';
     }
-
-
 }
 
 //Hacer visibel o invisibel el formulario (boton buscar)
 function verBuscar() {
-
     let divBuscar = document.getElementById("divBuscar");
     if (divBuscar.style.display == 'none') {
         divBuscar.style.display = 'block';
     } else {
         divBuscar.style.display = 'none';
     }
-
 }
 
 let contador = 4;
@@ -51,13 +47,11 @@ function cargarOrganizacion(org) {
 
     let option = document.createElement("option");
     option.text = org;
+
     select.add(option);
-
-
 }
 
 function enviar() {
-
     let nombre = document.getElementById("1").value;
     let organizacion = document.getElementById("2").value;
     let movil = document.getElementById("3").value;
@@ -72,7 +66,6 @@ function enviar() {
     console.log(contactos);
     cargarOrganizacion(organizacion);
     limpiarCampos();
-
 }
 
 function buscar() {
@@ -86,11 +79,16 @@ function buscar() {
             break;
         }
     }
+
+    if (nombuscar == ""){
+        for(let i = 0; i < contactos.length; i++){
+
+        }
+    }
 }
 
 function imprimirPersona(persona) {
-
-    let msj = "**** Datos de la persona ****"
+    let msj = "**** Datos de la persona ****" +"\n";
     msj = msj + "Nombre: " + persona.nombre + "\n";
     msj = msj + "Organizacion: " + persona.organizacion + "\n";
     msj = msj + "Movil: " + persona.movil + "\n";
@@ -106,5 +104,42 @@ function limpiarCampos() {
     for (let i = 1; i < contador; i++) {
         document.getElementById(i).value = "";
     }
-
 }
+
+
+//Buscar:
+//puede buscar solo por nombre
+//puede buscar solo por organizacion
+
+//Cuando carga la organizacion solo cargue las distintas organizaciones.
+//Validaciones
+/*
+function validarMovil(){
+    if(/^[\d]{3}[-]*([\d]{2}[-]*){2}[\d]{2}$/i.test(telefono.value))) {
+        alert("Ingrese un Tel\u00E9fono v\u00e1lido");
+        telefono.style.borderColor = "red";
+        lbltelefono.style.color = "red";
+        return false;
+    }
+}
+
+function validarNombre(){
+    if(/^[a-z0-9_-]{3,16}$/i.test(telefono.value))) {
+        alert("Ingrese un Tel\u00E9fono v\u00e1lido");
+        telefono.style.borderColor = "red";
+        lbltelefono.style.color = "red";
+        return false;
+    }
+}
+
+function validarEmail(){
+    if(/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/i.test(telefono.value))) {
+        alert("Ingrese un Tel\u00E9fono v\u00e1lido");
+        telefono.style.borderColor = "red";
+        lbltelefono.style.color = "red";
+        return false;
+    }
+}
+
+
+*/

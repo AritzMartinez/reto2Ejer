@@ -45,8 +45,13 @@ function añadirMedio() {
 }
 
 function borrarMedio() {
+    let numLabel = document.getElementsByTagName("label");
+    let medio = Math.round(numLabel.length / 2);
+    console.log(numLabel.length);
+    console.log(medio);
+
     let form = document.getElementById("formu");
-    form.removeChild(form.childNodes[posicion]);
+    form.removeChild(form.childNodes[medio]);
 }
 
 //final
