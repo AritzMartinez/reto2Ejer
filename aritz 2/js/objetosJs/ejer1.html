@@ -13,7 +13,7 @@
     <input type="submit" value="Añadir" onclick="verFormulario()">
     <input type="submit" value="Buscar" onclick="verBuscar()">
 <div id="divContacto" style="display: none">
-    <form id="formuContacto">
+    <form id="formuContacto" onsubmit="return validar()">
         <p>
         Nombre:
         <input id="1" type="text" name="nombre" size="40">

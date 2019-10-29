@@ -55,6 +55,7 @@ function enviar() {
     let nombre = document.getElementById("1").value;
     let organizacion = document.getElementById("2").value;
     let movil = document.getElementById("3").value;
+    validar();
     let campos = [];
 
     for (let i = 4; i < contador; i++) {
@@ -74,7 +75,7 @@ function buscar() {
     let selected = combo.options[combo.selectedIndex].text;
 
     for (let i = 0; i < contactos.length; i++) {
-        if (contactos[i].nombre == nombuscar && contactos[i].organizacion == selected) {
+        if (contactos[i].nombre == nombuscar || contactos[i].organizacion == selected) {
             imprimirPersona(contactos[i]);
             break;
         }
@@ -107,6 +108,23 @@ function limpiarCampos() {
 }
 
 
+
+function validar() {
+    let valiNombre = /^([A-Z][a-zñáéíóú]+[\s]*)+$/;
+    let valiMovil = /^[a-z0-9_-]{3,16}$/;
+
+    if(valiNombre.test(document.getElementById("1").value) || document.getElementById("1").value == "") {
+        alert("Ingrese un nombre valido");
+
+        return false
+    }else if(valiMovil.test( document.getElementById("3").value) || document.getElementById("3").value == "") {
+
+        alert("Ingreses un movil valido");
+        return false
+    }
+    return true;
+}
+
 //Buscar:
 //puede buscar solo por nombre
 //puede buscar solo por organizacion
@@ -115,8 +133,8 @@ function limpiarCampos() {
 //Validaciones
 /*
 function validarMovil(){
-    if(/^[\d]{3}[-]*([\d]{2}[-]*){2}[\d]{2}$/i.test(telefono.value))) {
-        alert("Ingrese un Tel\u00E9fono v\u00e1lido");
+    if(/^[\d]{3}[-]*([\d]{2}[-]*){2}[\d]{2}$/i.test(movil.value))) {
+        alert("Ingreses un movil valido");
         telefono.style.borderColor = "red";
         lbltelefono.style.color = "red";
         return false;
@@ -124,8 +142,8 @@ function validarMovil(){
 }
 
 function validarNombre(){
-    if(/^[a-z0-9_-]{3,16}$/i.test(telefono.value))) {
-        alert("Ingrese un Tel\u00E9fono v\u00e1lido");
+    if(/^[a-z0-9_-]{3,16}$/i.test(nombre.value))) {
+        alert("Ingrese un nombre valido");
         telefono.style.borderColor = "red";
         lbltelefono.style.color = "red";
         return false;
@@ -133,8 +151,8 @@ function validarNombre(){
 }
 
 function validarEmail(){
-    if(/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/i.test(telefono.value))) {
-        alert("Ingrese un Tel\u00E9fono v\u00e1lido");
+    if(/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/i.test(email.value))) {
+        alert("Ingrese un email valido");
         telefono.style.borderColor = "red";
         lbltelefono.style.color = "red";
         return false;
