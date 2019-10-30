@@ -6,4 +6,4 @@ class Persona {
          this.movil = movil;
          this.campos = campos;
          }
-     }
+}

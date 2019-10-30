@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="ejer2.js"></script>
+</head>
+<body onload="myOnLoad()">
+<div id="divFormu" >
+    <h1>Alta de libros</h1>
+    <form id="formuLibro" onsubmit="return validar()">
+        <p>
+            Titulo:
+            <input id="titulo" type="text" name="titulo" size="40">
+        </p>
+        <p>
+            ISBN:
+            <input id="isbn" type="text" name="isbn">
+        </p>
+        <p>
+            Tipo:
+            <select id="select" name="tipoLibro" >
+                <option>Seleccione tipo de libro</option>
+            </select>
+        </p>
+        <h1>Alta de libros</h1>
+        <p>
+            Dni:
+            <input id="dni" type="text" name="dni">
+        </p>
+        <p>
+            Nombre completo:
+            <input id="nombre" type="text" name="nombre">
+        </p>
+        <p>
+            <input type="submit" value="+Autores">
+        </p>
+        <p>
+            Numero de ejemplares:
+            <input id="numEjemplares" type="text" name="numejemplares">
+        </p>
+        <p>
+            Disponible: Si
+            <input id="7" type="radio" name="disponible" value="Si">
+            No
+            <input id="8" type="radio" name="disponible" value="No">
+        </p>
+        <p>
+            Feche de disponibilidad:
+            <input id="fechaDisponoble" type="text" name="disponibilidad">
+        </p>
+
+    </form>
+</div>
+<p>
+    <input type="submit" value="Enviar" onclick="enviar()">
+</p>
+</body>
+</html>
