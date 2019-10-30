@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15ffebc5-c059-4df2-b7bb-0fa8c786f4c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/php/formulario/Ejercicio4.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/js/objetosJs/ejer1.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/objetosJs/ejer1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/objetosJs/ejer1.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/objetosJs/ejer1.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/diw/Ejercicios6-7/6/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/diw/Ejercicios6-7/6/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diw/Ejercicios6-7/7/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/diw/Ejercicios6-7/7/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/formulario/ejer1.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/formulario/ejer1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/formulario/ejer4.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/formulario/ejer4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/formulario/prueba.html" beforeDir="false" afterPath="$PROJECT_DIR$/php/formulario/prueba.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/formulario/prueba.php" beforeDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,9 +89,13 @@
       <workItem from="1571996125378" duration="4000" />
       <workItem from="1572078956429" duration="5965000" />
       <workItem from="1572101880061" duration="8706000" />
+<<<<<<< Updated upstream
       <workItem from="1572363458864" duration="599000" />
       <workItem from="1572364209340" duration="1162000" />
       <workItem from="1572371100513" duration="1495000" />
+=======
+      <workItem from="1572336749725" duration="4401000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>

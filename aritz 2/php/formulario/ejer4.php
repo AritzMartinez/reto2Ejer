@@ -14,15 +14,6 @@
 </form>
 
 <?php
-if (isset($_GET["usuario"]) && isset($_GET["contrasena"])){
-
-    $usuario = $_GET["usuario"];
-    $contraseña = $_GET["contrasena"];
-
-
-
-
-}
 
 $usuarios = array(
     "user1" => array (
@@ -37,21 +28,35 @@ $usuarios = array(
     )
 );
 
-function recorre($array,$usu,$contra){
-    foreach ($array as $usuario =>$detalles){
-            if ($usu ==  usuario){
+if (isset($_GET["usuario"]) && isset($_GET["contrasena"])){
 
-            }
-        }foreach ($detalle as $indice => $valor){
-            if ($contraseña ==$password){
-
-            }
-    }
+    $usuario = $_GET["usuario"];
+    $contraseña = $_GET["contrasena"];
+    echo validarLogin($usuario,$contraseña,$usuarios);
 
 }
 
-
-
+function validarLogin ($user, $contra, $array){
+    $nombre = "";
+    $apellido = "";
+    foreach ($array as $key =>$value){
+        if ($key == $user){
+            foreach ($value as $key => $valor) {
+                if ($key == "nombre"){
+                    $nombre = $valor;
+                }elseif ($key == "apellido"){
+                    $apellido = $valor;
+                }elseif ($key == "contrasena"){
+                    if ($valor == $contra){
+                        return "Hola, {$nombre} {$apellido}";
+                    }else{
+                        return "La cotraseña es incorrecta. Pruebe de nuevo";
+                    }
+                }
+            }
+        }
+    }
+}
 ?>
 
 </body>
