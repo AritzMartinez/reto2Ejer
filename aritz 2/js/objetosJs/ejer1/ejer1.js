@@ -25,6 +25,8 @@ let contador = 4;
 
 //Añadir campo al formulario
 function añadirCampo() {
+
+
     let nomCampo = prompt("Nombre del campo");
 
     let formulario = document.getElementById("formuContacto");
@@ -44,11 +46,17 @@ function añadirCampo() {
 function cargarOrganizacion(org) {
     contactos.sort();
     let select = document.getElementById("check");
-
     let option = document.createElement("option");
-    option.text = org;
 
+    option.text = org;
+    for(let i=1;i<select.length;i++) {
+        if(select.options[i].text==org) {
+          return;
+        }
+    }
     select.add(option);
+
+
 }
 
 function enviar() {
@@ -73,19 +81,26 @@ function buscar() {
     let nombuscar = document.getElementById("1buscar").value;
     let combo = document.getElementById("check");
     let selected = combo.options[combo.selectedIndex].text;
-
+    if (nombuscar !="" && selected == "Selecciona la organizacion"){
+        for (let i = 0; i < contactos.length; i++) {
+            if (contactos[i].nombre == nombuscar) {
+                imprimirPersona(contactos[i]);
+            }
+        }
+    }else {
+        for (let i = 0; i < contactos.length; i++) {
+            if (contactos[i].organizacion == selected) {
+               imprimirPersona(contactos[i]);
+            }
+        }
+    }
     for (let i = 0; i < contactos.length; i++) {
-        if (contactos[i].nombre == nombuscar || contactos[i].organizacion == selected) {
+        if (contactos[i].nombre == nombuscar && contactos[i].organizacion == selected) {
             imprimirPersona(contactos[i]);
             break;
         }
     }
 
-    if (nombuscar == ""){
-        for(let i = 0; i < contactos.length; i++){
-
-        }
-    }
 }
 
 function imprimirPersona(persona) {
@@ -110,54 +125,15 @@ function limpiarCampos() {
 
 
 function validar() {
-    let valiNombre = /^([A-Z][a-zñáéíóú]+[\s]*)+$/;
-    let valiMovil = /^[a-z0-9_-]{3,16}$/;
+    let valiNombre = /^[A-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+    let valiMovil =  /^(\+34|0034|34)?[6|7|8|9][0-9]{8}$/;
 
-    if(valiNombre.test(document.getElementById("1").value) || document.getElementById("1").value == "") {
+    if(valiNombre.exec(document.getElementById("1").value) || document.getElementById("1").value == "") {
         alert("Ingrese un nombre valido");
-
         return false
-    }else if(valiMovil.test( document.getElementById("3").value) || document.getElementById("3").value == "") {
-
+    }else if(valiMovil.exec( document.getElementById("3").value) || document.getElementById("3").value == "") {
         alert("Ingreses un movil valido");
         return false
     }
     return true;
 }
-
-//Buscar:
-//puede buscar solo por nombre
-//puede buscar solo por organizacion
-
-//Cuando carga la organizacion solo cargue las distintas organizaciones.
-//Validaciones
-/*
-function validarMovil(){
-    if(/^[\d]{3}[-]*([\d]{2}[-]*){2}[\d]{2}$/i.test(movil.value))) {
-        alert("Ingreses un movil valido");
-        telefono.style.borderColor = "red";
-        lbltelefono.style.color = "red";
-        return false;
-    }
-}
-
-function validarNombre(){
-    if(/^[a-z0-9_-]{3,16}$/i.test(nombre.value))) {
-        alert("Ingrese un nombre valido");
-        telefono.style.borderColor = "red";
-        lbltelefono.style.color = "red";
-        return false;
-    }
-}
-
-function validarEmail(){
-    if(/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/i.test(email.value))) {
-        alert("Ingrese un email valido");
-        telefono.style.borderColor = "red";
-        lbltelefono.style.color = "red";
-        return false;
-    }
-}
-
-
-*/
