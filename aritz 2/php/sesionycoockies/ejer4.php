@@ -3,25 +3,27 @@
     <title>Hola Mundo PHP</title>
 </head>
 <body>
-<form action="ejer4.php" method="get">
-    <ul>
-
-    </ul>
-    Añadir asistencia:
-    <input type="text" name="texto"><br>
-    <input type="submit" value="Guardar">
-</form>
-Idioma:
-
 <?php
+session_start();
 
-if (isset($_GET["idioma"])){
-    $idioma = $_GET["idioma"];
-    guardarCoockie($idioma);
-
+function borrarSesion(){
+    session_unset();
+    $_SESSION["contador"] = 0;
 }
-sess
+function guardarPersonaSesion($persona){
+    $_SESSION["asistencia"] = $persona;
+}
 ?>
 
+<ul>
+    <?php echo "Nombre del asistente".$_SESSION["asistencia"]?>
+</ul>
+
+<form action="ejer4.php" method="get">
+    <p>Asistencia</p>
+    <input type="text" name="persona">
+    <input type="submit" value="Añadir" onclick="añadirPersonas()">
+</form>
+<input type="button" value="Borrar"onclick="borrarSesion()">
 </body>
 </html>

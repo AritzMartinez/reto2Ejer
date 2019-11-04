@@ -4,48 +4,40 @@
 </head>
 <body>
 <form action="ejer5.php" method="get">
-    <h2>Añadir asistente</h2>
-    <input type="text" name="persona">
-    <input type="submit" value="Añadir">
+   <p>
+    Usuario
+    <input type="text" name="usu">
+   </p>
+    <p>
+    Constraseña
+    <input type="text" name="contra">
+    </p>
+    <input type="submit" value="Guardar">
 </form>
-
-<ul>
-    <?php añadirPersonas($_SESSION["contador"]) ?>
-</ul>
-
-<input type="button" onclick="<?php borrarSesion() ?>">
-<p><?php echo $_SESSION["contador"] ?></p>
-
+</body>
 <?php
 session_start();
-if (!isset($contador)){
-    $_SESSION["contador"] = 0;
-}
-function aumentarContador(){
-    $_SESSION["contador"]++;
-}
-function añadirPersonas($contador){
-    for ($i = 0; $i < $contador; $i++){
-        if (isset($_SESSION["persona" . $i])){
-            echo "<p>". $i . $_SESSION['persona'.$i] ."</p>";
-        }else{
-            echo "<p>adios</p>";
-        }
+$usuarios = array(
+    "usua1" => array(
+        "nombre" => "a",
+        "contraseña" => "a"
+    ),
+    "usua2" => array(
+        "nombre" => "b",
+        "contraseña" => "b"
+    )
+);
+$_SESSION["usua1"] = "a";
+$_SESSION["usua2"] = "b";
+
+function comprobarUsuario($usu, $contra){
+    if ($_SESSION[$usu] == $contra){
+        $_SESSION["msj"] = "Hola ".$usu;
     }
 }
-function guardarPersonaSesion($nombreSesion,$persona, $contador){
-    $_SESSION[$nombreSesion . $contador] = $persona;
-    aumentarContador();
+if (isset($_GET["usu"]) && isset($_GET["contra"])){
+    comprobarUsuario($_GET["usu"], $_GET["contra"], $usuarios);
 }
-function borrarSesion(){
-    session_unset();
-    $_SESSION["contador"] = 0;
-}
-if (isset($_GET["persona"])){
-    guardarPersonaSesion("persona", $_GET["persona"], $_SESSION["contador"] );
-}
-
 ?>
 
-</body>
 </html>
