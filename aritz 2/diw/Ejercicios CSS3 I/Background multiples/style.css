@@ -1,0 +1,11 @@
+.examplemultiplebackgroundsa {
+    
+}
+p {
+    height: 60%;
+background:
+    url("decoration.png"),
+    url("old_paper.jpg"),
+    url("ribbon.png");
+
+}

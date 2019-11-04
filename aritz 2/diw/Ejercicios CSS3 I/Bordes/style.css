@@ -1,0 +1,27 @@
+
+div{
+    background: #686868;
+    width: 100px;
+    height: 50px;
+    display: block;
+    margin: 5px;
+}
+div[class$="sa"]{
+     border-bottom-right-radius: 40px;
+}
+div[class$="sb"]{
+    border-bottom-right-radius: 20px;
+}
+div[class$="sc"]{
+    border-bottom-right-radius: 10px;
+}
+div[class$="sd"]{
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+div[class$="se"] {
+    border-radius: 20px;
+}
+div[class$="sf"]{
+    border-radius: 200px;
+ }
