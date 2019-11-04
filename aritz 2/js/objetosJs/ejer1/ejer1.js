@@ -137,3 +137,17 @@ function validar() {
     }
     return true;
 }
+
+/*  Mejoras
+* Problemas con la validacion del movil.
+* Resetear el campo añadido despues de envair un contacto.
+* Salir en el for return sobra.
+* for{
+*   if{
+*       return;
+*   }
+* }
+* numPersona++ = push
+*El for de buscar con el break;
+*try
+*/

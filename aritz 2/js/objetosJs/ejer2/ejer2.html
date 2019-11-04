@@ -8,7 +8,7 @@
 <body onload="myOnLoad()">
 <div id="divFormu" >
     <h1>Alta de libros</h1>
-    <form id="formuLibro" onsubmit="return validar()">
+    <form id="formuLibro" >
         <p>
             Titulo:
             <input id="titulo" type="text" name="titulo" size="40">
@@ -30,10 +30,10 @@
         </p>
         <p>
             Nombre completo:
-            <input id="nombre" type="text" name="nombre">
+            <input id="nombre" type="text" name="nombreapellidos">
         </p>
         <p>
-            <input type="submit" value="+Autores">
+            <input type="submit" value="+Autores" onclick="enviar()">
         </p>
         <p>
             Numero de ejemplares:

@@ -22,6 +22,7 @@ main {
     width: 900px;
     min-width: 320px;
     min-height: 200px;
+    display: flex;
 }
 
 /* Interior del contenedor */
@@ -30,6 +31,7 @@ main {
     background-color: rgba(0, 0, 0, .4);
     padding: 20px;
     display: flex;
+    flex-direction: column;
 }
 
 .lateral > img {
