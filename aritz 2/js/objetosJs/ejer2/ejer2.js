@@ -16,23 +16,58 @@ function cargarTipoLIbro() {
         idselect.add(option);
     }
 }
+let contador = 4;
+function masAutores() {
 
-function enviar() {
-    let nombreApellido = document.getElementById("nombreapellidos").value;
-    let dni = document.getElementById("dni").value;
+    let nombre1 = document.getElementById("nombre1");
+    let p = document.createElement("p")
+    p.id = "dni" + contador;
+    let labelText = document.createTextNode("Final ");
+
+    //Inseto en el body el div
+    document.body.appendChild(nombre1);
+    //Añado el texto al elemento label
+    label.appendChild(labelText);
+    //Inserto el label en le body
+    document.body.appendChild(label);
+    //Inserto en el div el label
+    formu.appendChild(label);
 
 
-    console.log("alfo")
-    autor[posiAutor] = new Autor(dni,nombreApellido);
-    posiAutor++;
-    console.log(autor);
-    limpiarCampos();
+
+    let nomCampo = prompt("Nombre del campo");
+
+    let divautores = document.getElementById("autores");
+    let p = document.createElement("p");
+    p.id = "dni" + contador;
+    let input = document.createElement("input");
+    input.id = contador;
+    let pText = document.createTextNode("Dni" + ": ");
+
+    p.appendChild(pText);
+    p.appendChild(input);
+    divautores.appendChild(p);
+    contador++;
+
+  /*  let formulario = document.getElementById("formuLibro");
+    let p = document.createElement("p");
+    p.id = "p" + contador;
+    let input = document.createElement("input");
+    input.id = contador;
+    let pText = document.createTextNode(nomCampo + ": ");
+
+    p.appendChild(pText);
+    p.appendChild(input);
+    formulario.appendChild(p);
+    contador++;*/
+
+
+
 }
 
 function limpiarCampos() {
 
-    document.getElementById("dni").value = "";
-    document.getElementById("nombreapellidos").value = "";
+
 }
 
 

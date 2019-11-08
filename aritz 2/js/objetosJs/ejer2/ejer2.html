@@ -6,7 +6,7 @@
     <script src="ejer2.js"></script>
 </head>
 <body onload="myOnLoad()">
-<div id="divFormu" >
+<div id="divFormu"  >
     <h1>Alta de libros</h1>
     <form id="formuLibro" >
         <p>
@@ -17,24 +17,26 @@
             ISBN:
             <input id="isbn" type="text" name="isbn">
         </p>
-        <p>
+        <p  >
             Tipo:
             <select id="select" name="tipoLibro" >
                 <option>Seleccione tipo de libro</option>
             </select>
         </p>
+        <div id="autores">
         <h1>Alta de libros</h1>
         <p>
             Dni:
-            <input id="dni" type="text" name="dni">
+            <input id="dni1" type="text" name="dni">
         </p>
         <p>
             Nombre completo:
-            <input id="nombre" type="text" name="nombreapellidos">
+            <input id="nombre1" type="text" name="nombreapellidos">
         </p>
         <p>
-            <input type="submit" value="+Autores" onclick="enviar()">
+            <input type="submit" value="+Autores" onclick="masAutores()">
         </p>
+        </div>
         <p>
             Numero de ejemplares:
             <input id="numEjemplares" type="text" name="numejemplares">

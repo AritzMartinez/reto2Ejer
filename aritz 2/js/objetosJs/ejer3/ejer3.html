@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="ejer3.js"></script>
+</head>
+<body>
+<h1>Indica que operacion quieres realizar</h1>
+    <input type="submit" value="Añadir pregunta" onclick="verPreguntas()">
+    <input type="submit" value="Generar examen" onclick="generar()">
+<div id="divPreguntas" style="display: none">
+    z<
+    <p>
+    <textarea id="pregunta" name="textarea" rows="3" cols="50" placeholder="Enunciado de la pregunta"></textarea>
+    </p>
+
+        <textarea id="respu1" name="textarea" rows="3" cols="50" placeholder="Respuesta1"></textarea><input type="radio" name="rad" value="1">Correcto<br>
+
+        <textarea id="respu2" name="textarea" rows="3" cols="50" placeholder="Respuesta2"></textarea><input type="radio" name="rad" value="2">Correcto<br>
+
+        <textarea id="respu3" name="textarea" rows="3" cols="50" placeholder="Respuesta3"></textarea><input type="radio" name="rad" value="3">Correcto<br>
+
+        <textarea id="respu4" name="textarea" rows="3" cols="50" placeholder="Respuesta4"></textarea><input type="radio" name="rad" value="4">Correcto<br>
+
+        <input type="submit" value="Enviar" onclick="enviar()">
+</div>
+</body>
+</html>
