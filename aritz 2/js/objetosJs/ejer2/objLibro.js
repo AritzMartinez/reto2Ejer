@@ -1,3 +1,13 @@
+function Libro() {
+        this.titulo;
+        this.isbn;
+        this.tipo;
+        this.autores = [];
+        this.ejemplares;
+        this.disponible;
+        this.fechaDisponible;
+}
+
 function Libro (titulo,isbn,tipo,numEjemplares,diponibilidad,fechaDisponible,autores){
         this.titulo = titulo;
         this.isbn = isbn;

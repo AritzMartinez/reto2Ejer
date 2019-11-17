@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="ejer3.js"></script>
+    <script src="jQuery_3.4.1_min.js"></script>
+    <script src="objPreguntas.js"></script>
 </head>
 <body>
 <h1>Indica que operacion quieres realizar</h1>
     <input type="submit" value="Añadir pregunta" onclick="verPreguntas()">
-    <input type="submit" value="Generar examen" onclick="generar()">
+    <input type="submit" value="Generar examen" onclick="generarExamen()">
+    <div id="examen">
+
+    </div>
 <div id="divPreguntas" style="display: none">
-    z<
+
     <p>
     <textarea id="pregunta" name="textarea" rows="3" cols="50" placeholder="Enunciado de la pregunta"></textarea>
     </p>
@@ -24,6 +29,11 @@
         <textarea id="respu4" name="textarea" rows="3" cols="50" placeholder="Respuesta4"></textarea><input type="radio" name="rad" value="4">Correcto<br>
 
         <input type="submit" value="Enviar" onclick="enviar()">
+</div>
+<div id="botones" style="display: none">
+    <input type="submit" value="Siguiente" onclick="verPregunta()">
+    <input type="submit" value="Ver nota" onclick="nota()">
+
 </div>
 </body>
 </html>

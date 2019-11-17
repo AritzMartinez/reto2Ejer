@@ -49,10 +49,6 @@ window.onload = function () {
     function enviar() {
 
 
-        let validni = /[0-9]{8}[A-z]{1}/;
-        let valinum = /[0-9]/;
-        let valifecha = /[0-9]{4}-[0-9]{2}-[0-9]{2}/;
-
         let titulo = document.getElementById("titulo").value;
         let isbn = document.getElementById("isbn").value;
         let tipo = document.getElementById("selectTipo").value;
@@ -65,11 +61,23 @@ window.onload = function () {
         }
         let fecha = document.getElementById("fecha").value;
 
-        let libro = new objLibro(titulo, isbn, tipo, autores, numejemplares, disponible, fecha);
-        envioAjax(JSON.stringify(libro));
-        // hacer submit al formulario
-        document.getElementById('formulario').submit();
+        let arrayAutores = [];
 
+        for (let i = 0; i < divautores.length; i++) {
+
+            let dni = divautores[i].children[0].children[0].value;
+            let nombreApellidos = divautores[i].children[1].children[0].value;
+
+            let autor = new Autor(dni, nombreApellidos);
+            arrayAutores.push(autor);
+        }
+
+
+        let libro = new Libro(titulo, isbn, tipo, numejemplares, disponible, fecha,arrayAutores);
+        envioAjax(JSON.stringify(libro));
+
+        document.getElementById('formulario').submit();
+        console.log(libro);
 
     }
 
@@ -78,6 +86,7 @@ window.onload = function () {
             url: "#",
             data: libro,
             success: alert("Libro Enviado")
+
         });
     }
 
@@ -95,27 +104,22 @@ window.onload = function () {
         fecha.setAttribute("style", "display: none;")
     }
 
-    function comprobarExpresionRegular(texto, expresion) {
-        if (expresion.test(texto)) {
-            return texto;
-        } else {
-            throw texto;
-        }
-    }
+
 
     function validar() {
-        let valitexto = /[A-z]/;
-        let validni = /[0-9]{8}[A-z]{1}/;
-        let valinum = /[0-9]/;
-        let valifecha = /[0-9]{4}-[0-9]{2}-[0-9]{2}/;
 
-        if (valiNombre.exec(document.getElementById("1").value) || document.getElementById("1").value == "") {
-            alert("Ingrese un nombre valido");
+        let validni = /[0-9]{8}[A-z]{1}/;
+        let valifecha = /[0-9]{4}-[0-9]{2}-[0-9]{2}/;
+        let valiisbn = /^(?:ISBN(?:-10)?:?●)?(?=[0-9X]{10}$|(?=(?:[0-9]+[-●]){3})[-●0-9X]{13}$)[0-9]{1,5}[-●]?[0-9]+[-●]?[0-9]+[-●]?[0-9X]$/
+
+        if(validni.exec(document.getElementById("dni").value) || document.getElementById("dni").value == "") {
+            alert("Ingrese un dni valido");
             return false
-        } else if (valiMovil.exec(document.getElementById("3").value) || document.getElementById("3").value == "") {
-            alert("Ingreses un movil valido");
+        }else if(valifecha.exec( document.getElementById("fecha").value) || document.getElementById("fecha").value == "") {
+            alert("Ingreses una fecha valida");
             return false
         }
+
         return true;
     }
 
