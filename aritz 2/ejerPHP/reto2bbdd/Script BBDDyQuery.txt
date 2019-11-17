@@ -1,4 +1,4 @@
-CREATE TABLE `Usuarios` (
+CREATE TABLE `Usuario` (
 	`idUsuario` INT NOT NULL AUTO_INCREMENT,
 	`nomUsuario` TEXT(50) NOT NULL,
 	`password` TEXT(30) NOT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE `Subcategoria` (
 	PRIMARY KEY (`idSubcategoria`)
 );
 
-ALTER TABLE `Usuarios` ADD CONSTRAINT `Usuarios_fk0` FOREIGN KEY (`idEmpresa`) REFERENCES `Empresa`(`idEmpresa`);
+ALTER TABLE `Usuario` ADD CONSTRAINT `Usuario_fk0` FOREIGN KEY (`idEmpresa`) REFERENCES `Empresa`(`idEmpresa`);
 
 ALTER TABLE `Anuncio` ADD CONSTRAINT `Anuncio_fk0` FOREIGN KEY (`idEmpresa`) REFERENCES `Empresa`(`idEmpresa`);
 
