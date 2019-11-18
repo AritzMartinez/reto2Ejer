@@ -72,12 +72,16 @@ window.onload = function () {
             arrayAutores.push(autor);
         }
 
+        if(validacion(titulo,isbn,tipo,numejemplares,disponible,fecha,dni,numejemplares)==true){
+            let libro = new Libro(titulo, isbn, tipo, numejemplares, disponible, fecha,arrayAutores);
+            envioAjax(JSON.stringify(libro));
 
-        let libro = new Libro(titulo, isbn, tipo, numejemplares, disponible, fecha,arrayAutores);
-        envioAjax(JSON.stringify(libro));
+            document.getElementById('formulario').submit();
+            console.log(libro);
+        } else{
+            alert("Ha ocurrido un problema con los datos del  formulario");
+        }
 
-        document.getElementById('formulario').submit();
-        console.log(libro);
 
     }
 
@@ -104,6 +108,55 @@ window.onload = function () {
         fecha.setAttribute("style", "display: none;")
     }
 
+    function validacion(titulo,isbn,tipo,numejemplares,disponible,fecha,dni) {
+
+        let validni = /[0-9]{8}[A-z]{1}/;
+        let valifecha = /[0-9]{4}-[0-9]{2}-[0-9]{2}/;
+        let valiisbn = /^(?:ISBN(?:-10)?:?●)?(?=[0-9X]{10}$|(?=(?:[0-9]+[-●]){3})[-●0-9X]{13}$)[0-9]{1,5}[-●]?[0-9]+[-●]?[0-9]+[-●]?[0-9X]$/
+
+        let msj = "";
+        let vali = true;
+
+        if (validni.exec(dni) == false) {
+            // Si no se cumple la condicion...
+            msj = "Introduce el dni \n";
+            vali=false;
+        }
+        if (valifecha.exec(fecha) == false) {
+            // Si no se cumple la condicion...
+            msj = msj + "Introduce la fecha \n"
+            vali=false;
+        }
+        if (valiisbn.exec(isbn) == false) {
+            // Si no se cumple la condicion...
+            msj = msj + "Introduce la segunda respuesta \n"
+            vali=false;
+        }
+        if (titulo.length == "") {
+            // Si no se cumple la condicion...
+            msj = msj + "Introduce el titulo \n"
+            vali=false;
+        }
+        if (tipo.length == "") {
+            // Si no se cumple la condicion...
+            msj = msj + "Introduce el tipo \n"
+            vali=false;
+        }
+        if (numejemplares.length == "") {
+            // Si no se cumple la condicion...
+            msj = msj + "Introduce el numero de ejemplares \n"
+            vali=false;
+        }
+        if (disponible.length == "") {
+            // Si no se cumple la condicion...
+            msj = msj + "Introduce la disponivilidad \n"
+            vali=false;
+        }
+        if(msj != ""){
+            alert(msj);
+        }
+        return vali;
+    }
 
 
     function validar() {
