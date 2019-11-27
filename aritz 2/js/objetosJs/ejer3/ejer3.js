@@ -18,7 +18,7 @@ function enviar() {
     let respuesta2 = document.getElementById("respu2").value;
     let respuesta3 = document.getElementById("respu3").value;
     let respuesta4 = document.getElementById("respu4").value;
-
+console.log(pregunta);
     let rad = $('input[name="rad"]:checked').val();
 
     console.log("algo");

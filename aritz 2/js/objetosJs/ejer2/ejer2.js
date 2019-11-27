@@ -53,6 +53,7 @@ window.onload = function () {
         let isbn = document.getElementById("isbn").value;
         let tipo = document.getElementById("selectTipo").value;
         let numejemplares = document.getElementById("numejemplares").value;
+        console.log(titulo);
         let disponible = "";
         if (document.getElementById('si').checked) {
             disponible = 'si';
